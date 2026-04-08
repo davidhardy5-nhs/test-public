@@ -22,7 +22,7 @@ jobs:
 
       - name: Read the release name and create a branch. Push branch to private and public.
         run: |
-          RELEASE_NAME="${{ github.event.release.tag_name }}"
+          RELEASE_NAME=$(gh release view --json name | jq -r '.name')
           RELEASE_BRANCH=release/$RELEASE_NAME
           git branch $RELEASE_BRANCH
           git push -u origin $RELEASE_BRANCH
