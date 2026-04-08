@@ -10,13 +10,13 @@ jobs:
     if: github.repository == 'davidhardy5-nhs/test-private'
     steps:
       - name: Checkout private
-        uses: actions/checkout@v3
+        uses: actions/checkout@v6
         with:
           token: ${{ secrets.EXTERNAL_REPO_TOKEN }}
           path: private
 
       - name: Checkout public
-        uses: actions/checkout@v3
+        uses: actions/checkout@v6
         with:
           token: ${{ secrets.EXTERNAL_REPO_TOKEN }}
           repository: davidhardy5-nhs/test-public
