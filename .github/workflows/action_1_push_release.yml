@@ -1,4 +1,4 @@
-name: 'Axtion 1 - Push Release to Public'
+name: 'Action 1 - Push Release to Public'
 on:
   release:
     types: [published]
