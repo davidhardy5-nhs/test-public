@@ -12,7 +12,7 @@ jobs:
   release-if-merged:
     if: |
       github.event.pull_request.merged == true && 
-      startsWith(github.head_ref, 'release/20') &&
+      startsWith(github.head_ref, 'release/2') &&
       github.repository == 'davidhardy5-nhs/test-public'
     runs-on: ubuntu-latest
     steps:
