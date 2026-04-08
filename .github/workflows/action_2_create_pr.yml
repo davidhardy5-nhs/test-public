@@ -8,9 +8,9 @@ on:
 jobs:
   create_pr:
     runs-on: ubuntu-latest
-    if: github.repository == 'davidhardy5-nhs/test-private'
+    if: github.repository == 'davidhardy5-nhs/test-public'
     steps:
-      - uses: actions/checkout@v3
+      - uses: actions/checkout@v6
         with:
           fetch-depth: 0
       - name: Create Pull Request
