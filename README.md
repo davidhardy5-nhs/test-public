@@ -2,4 +2,4 @@
 
 an update text
 
-v0.3 update
+v0.7 update
